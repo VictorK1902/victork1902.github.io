@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Lora);
+
+/*GLOBAL STYLINGS*/
+html,body{
+	height: 1500px; 
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Lora', serif;
+	background-image: url("../resources/paperPattern.jpg");
+    background-repeat: repeat-y-x;
+}
+hr {
+  border-color: #3e3d3e;  
+  left: 0px;
+  right: 0px;
+}
+div {
+    cursor: default; 
+}
+._Header{
+	margin-left: 15px;
+	font-weight: bold;
+}
+._Details{
+	margin-left: 30px;
+}
+#projects, #aboutme, #workexp, #contact, #acaPrjBody, #sidePrjBody{
+	display: none;
+}
+/**/
+
+
+/* HEADER 280px*/
+#header{
+	/*background-color: #193660;*/
+	height: 280px;
+}
+#profileThumbnail{
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+.name{
+	color: #190909;
+	font-size: 50px;	
+	text-align: center;
+}
+/**/
+
+/*MENU about 220px*/
+#menu{	
+	text-align: center;
+	font-size: 30px;
+}
+#menulist>li{
+	list-style-type: none;
+	display: inline-block;
+	margin-left: 25px;
+	margin-right: 25px;		
+}
+#menulist>li>a{
+	color: #190909; /*082145 252839 */
+}
+#menulist>li>a:link,#menulist>li>a:visited, #menulist>li>a:hover, #menulist>li>a:active{
+	text-decoration: none;	
+	color: #677077;
+	cursor: pointer;   
+}
+
+/**/
+
+/*CONTENT BODY 900px*/
+#contentBd{
+	/*margin-top: 10px;*/
+	margin-left: 15%;
+	margin-right: 15%;
+	height: 950px;
+	/*background-color: lightblue;*/
+}
+
+/*__Aboutme*/
+#aboutme>p{
+	margin-left: 5%;
+	margin-right : 5%;
+}
+#aboutme>p._Header{	
+	margin-left: 30px;
+	font-size: 19px;	
+}
+#aboutme>p._Details{	
+	margin-left: 55px;
+	font-size: 17px;	
+}
+
+/*__Project*/
+#prjCategory>a{	
+	color: black; 
+	font-size: 14px; 
+}
+#prjCategory>a:hover{
+	cursor: pointer; 
+	text-decoration: none
+}
+.prjBody{
+	color: #190909
+}
+
+
+
+/**/
+
+
+/*FOOTER 70px*/
+#r4c1{
+	/*background-color: #193660;*/
+	height: 70px;
+	margin-top: 30px;
+}
+#footText{
+	color: black;
+	font-size: 12px;	
+	text-align: center;	
+	margin-top: 20px;
+	line-height: 30px;
+}
+/**/
+
+

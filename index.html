@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- Required meta tags that I have no idea what they are  -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Required meta tags that I have no idea what they are  -->
+
+   <title>Victor Nguyen</title>
+   <!-- Our pre-compiled css  -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/customCSS.css" rel="stylesheet">
+
+   <!-- jQuery required for js plugins -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Our pre-compiled js -->
+   <script src="js/bootstrap.min.js"></script>   
+</head>
+<body> <!-- 1400 -->
+
+<div class = "container-fluid">
+   <script src="js/controller.js"></script>
+
+   <!-- HEADER -->
+   <div class="row" id="header"> <!-- 280 -->
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="r1c1">      
+         <img src="resources/me.jpeg" class="img-responsive img-circle center-block" id="profileThumbnail"
+            width="150" height="auto">
+         <p class="name">Victor Nguyen</p>
+         <img src="resources/styleBorder.png" class="img-responsive img-circle center-block" id="styleBorder">
+      </div>      
+   </div>
+   <br>
+
+   <!-- MENU -->
+   <div class="row" id="menu"> <!-- 220 -->
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="r2c1">          
+         <ul id="menulist">
+            <li><a id="ab" onclick="doClick('ab')"><strong>About</strong></a></li>
+            <li><a id="prj" onclick="doClick('prj')"><strong>Projects</strong></a></li>
+            <li><a id="wex" onclick="doClick('wex')"><strong>Work Experience</strong></a></li>
+            <li><a id="ct" onclick="doClick('ct')"><strong>Contact</strong></a></li>
+         </ul>
+      </div>
+   </div>
+<!--    <hr size="1px" width="40%"></hr> -->
+   <br><br>
+
+   <!-- CONTENT BODY -->
+   <div class="row" id="contentBd"> <!-- 920 -->
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="r3c1">                           
+         <div id="aboutme">
+            <p class="_Header">Summary</p> 
+               <p class="_Details">
+                  My name is Victor Nguyen and I'm currently a CS undergrad '16 at UTD.<br/>
+               I have been developing Android mobile app since February 2015. Starting from late May 2015, I began my internship at Copart Inc as a mobile engineer, switching to using Appcelerator as a cross-platform framework to port their existing iOS apps.<br/>
+               My other area of interests include full-stack development and making video games. Please check out my projects for more details.
+               </p>
+            <p class="_Header">Education</p> 
+               <p class="_Details">The University of Texas at Dallas<br/>
+               Bachelor of Science (BS), Computer Science, 3.806<br/>
+               2012-2016</p>
+            <p class="_Header">Technical Skills</p> 
+               <p class="_Details">
+                  Programming Languages : Java, Javascript, C#, C/C++, HTML/CSS, SQL<br/>
+                  Operating System : Windows, UNIX<br/>
+                  Software : Git (Github, BitBucket), MS Offices <br/>
+               </p>   
+
+         </div>
+         <div id="projects">
+            <div id="prjCategory">
+               <a id="acaCat" onclick="switchPrjCat('#acaCat')"><strong>Academic Projects</strong></a> |
+               <a id="sideCat" onclick="switchPrjCat('#sideCat')" ><strong>Side Projects</strong></a>
+            </div>
+
+            <div class="prjBody" id="acaPrjBody">   
+               <h2><strong>Academics projects</strong></h2>
+
+               <h4><strong>1. Explore Apollo - 09/01/15 to 12/11/15</strong></h4>
+               <p class="_Header">Project Summary</p>
+                  <p class="_Details">
+                     o This is a senior design project which aims to create a system providing access to digitized audio files from NASA mission 11. The entire application is split into 4 modules: front-end web page, API server, audio control server and database.<br/>
+                     o Our team is comprised of 4 UTD undergrads including me. We were expected to set up the basic development environment and tackle some critical use cases, as the next team will carry on with what we came up with, since this is a 2-semester project.<br/>
+                     o The entire system is open source: <a href="https://github.com/UTD-CRSS">https://github.com/UTD-CRSS</a>
+                  </p>
+               <p class="_Header">What I did</p>
+                  <p class="_Details">
+                     o Building the API server using NodeJS, Express framework and PostGreSQL. <br/>
+                     o Discussing with the front-end to define critical use cases. <br/>
+                     o Designing and exposing API endpoints to the front-end. <br/>
+                     o Writing sql scripts to query the database. <br/>
+                     o Giving input in designing the database schema and prototyping front-end UIs.<br/>                           
+                  </p>
+               <p class="_Header">What I learnt</p>
+                  <p class="_Details">
+                     o Basic knowledge of designing RESTful API server. <br/>
+                     o Using nodeJS and ExpressJS. <br/>
+                     o Revisiting sql scripts. <br/>
+                     o Revisiting relational database concepts, basic operations and database schema.<br/>
+                     o Helping with prototyping front-end UIs.<br/>                           
+                  </p> 
+               <p class="_Header">Technologies and Softwares used</p>
+                  <p class="_Details">NodeJS, ExpressJS, PostGreSQL and Git</p> 
+
+
+               <h4><strong>2. XO_316 - 09/01/15 to 12/11/15</strong></h4>
+               <p class="_Header">Project Summary</p>
+                  <p class="_Details">
+                     o This is a final 2D game project in my Intro to Video Game Programming Class, using Unity Engine.<br/>
+                     o Gameplay is based off Bomberman 1993, where the player controls a character capable of placing an auto-detonate
+                        bomb to destroy monsters and objects. The player wins when he/she defeats the finall boss.<br/>
+                     o For art design, I used <a href="http://nxcache.nexon.net/poptag/game/1pdemo.html">PopTag!</a> as my reference.   
+                  </p>
+               <p class="_Header">What I did</p>
+                  <p class="_Details">
+                     o Sketching and designing several art components including: the character, blocking objects, background, and detonation sprites <br/>
+                     o Gameplay implementation including critical mechanics: bomb explosion, character movement, monster attacks and movements. <br/>
+                     o Animating moveable objects: character and the monsters<br/> 
+                  </p>
+               <p class="_Header">What I learnt</p>
+                  <p class="_Details">
+                     o Unity API and Physics2D<br/>
+                     o Using Unity API to animate objects.<br/>
+                     o Learning C#<br/>
+                     o Basic concepts and expectation in art design<br/>                  
+                  </p>
+               <p class="_Header">Technologies and Softwares used</p>
+                  <p class="_Details">Unity3D, Git, Photoshop and Inkscape</p> 
+               <p class="_Header">Demo</p>  
+                  <p class="_Details">Please make sure you have Unity Web Player installed before open (currently not supported in Chrome)</p> 
+                  <div class="panel panel-default _Details">
+                     <div class="panel-heading">
+                        <h3 class="panel-title"> XO_316 Demo
+                        <span class="pull-right clickable" onclick="showXOPlayer('false')"><i id="xoIcon" class="glyphicon glyphicon-chevron-down"></i></span>
+                     </h3>
+                     </div>
+                     <div id="xobody" class="panel-body">
+                        <iframe src="XO_Web/XO_Web.html" name="theFrame" id="bodyIFrame" scrolling="yes" frameborder="0" height="650px" width="100%"></iframe>
+                     </div>
+                  </div>
+
+            </div>
+            <div class="prjBody" id="sidePrjBody">   
+               <h2><strong>Side projects</strong></h2>
+               <h4><strong>1. Personal Website victork1902.github.io - 12/16/15 to 12/23/15</strong></h4>
+               <p class="_Header">Project Summary</p>
+                  <p class="_Details">
+                     o My personal website hosted by GitHub, developed using Bootstrap and jQuery<br/>
+                     o Contents showing my academic background, work experience and technical skills<br/>
+                  </p>
+               <p class="_Header">What I did</p>
+                  <p class="_Details">
+                     o Doing research on common one-page template. <br/>
+                     o Design and implement UI interactions. <br/>                          
+                  </p>
+               <p class="_Header">What I learnt</p>
+                  <p class="_Details">
+                     o Revisitting HTML and CSS. <br/>
+                     o Learning Bootstrap. <br/>                          
+                  </p> 
+               <p class="_Header">Technologies and Softwares used</p>
+                  <p class="_Details">Bootstrap, jQuery and Git</p>
+
+               <h4><strong>2. Resistance Android App - 02/28/15 to 03/10/15</strong></h4>
+               <p class="_Header">Project Summary</p>
+                  <p class="_Details">
+                     o Simple adaptation of the board game Resistance into android.<br/>
+                     o This was started by me with a teammate during the hackDFW hackathon in 02/28, and then I finished it by myself.
+                     o <a href="https://en.wikipedia.org/wiki/The_Resistance_(game)">Click Here</a> for original game rules<br/>
+                  </p>
+               <p class="_Header">What I did</p>
+                  <p class="_Details">
+                     o Doing research on android API. <br/>
+                     o Prototype the UI and gameplay.<br/>
+                     o UI and gameplay implementation. <br/>                          
+                  </p>
+               <p class="_Header">What I learnt</p>
+                  <p class="_Details">
+                     o Android API <br/>
+                     o Using Android Studio. <br/>                          
+                  </p> 
+               <p class="_Header">Technologies and Softwares used</p>
+                  <p class="_Details">Android Studio</p> 
+               <p class="_Header">Demo</p>  
+                  <p class="_Details">Please click the following link to download the apk: <a href="apks/Resistance.apk">Download</a></p>                     
+               
+            </div>
+
+         </div>
+         <div id="workexp"></div>
+         <div id="contact"></div>
+      </div>
+   </div>
+   <br>
+
+   <!-- FOOTER -->
+   <div class="row" id="footer">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="r4c1">
+         <p id="footText"> Victor Nguyen &copy; 2015</p>
+      </div>
+   </div>
+   
+   <!-- detect devices -->
+   <div id="users-device-size">
+      <div id="xs" class="visible-xs"></div>
+      <div id="sm" class="visible-sm"></div>
+      <div id="md" class="visible-md"></div>
+      <div id="lg" class="visible-lg"></div>
+   </div>
+
+</div>
+
+</body>
+</html>
