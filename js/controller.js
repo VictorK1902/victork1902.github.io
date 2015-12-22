@@ -13,7 +13,7 @@ function doClick(input){
 	if (input == "ab"){		
 		if (prevMenuClicked!=null)
 			prevMenuClicked.hide();
-		$("#aboutme").fadeIn(1100);
+		$("#aboutme").fadeIn(700);
 		prevMenuClicked = $("#aboutme");
 	}
 	if (input == "prj"){
@@ -21,13 +21,13 @@ function doClick(input){
 			prevMenuClicked.hide();		
 		switchPrjCat("#acaCat");
 		showXOPlayer('true');
-		$("#projects").fadeIn(1100);
+		$("#projects").fadeIn(700);
 		prevMenuClicked = $("#projects");
 	}
 	if (input == "wex"){
 		if (prevMenuClicked!=null)
 			prevMenuClicked.hide();
-		$("#workexp").fadeIn(1100);
+		$("#workexp").fadeIn(700);
 		prevMenuClicked = $("#workexp");
 	}
 }
