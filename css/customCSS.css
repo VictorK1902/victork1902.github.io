@@ -88,20 +88,22 @@ div {
 }
 #aboutme>p._Details{	
 	margin-left: 55px;
-	font-size: 17px;	
+	font-size: 17px;
+	line-height: 30px	
 }
 
 /*__Project*/
 #prjCategory>a{	
 	color: black; 
-	font-size: 14px; 
+	font-size: 15px; 
 }
 #prjCategory>a:hover{
 	cursor: pointer; 
 	text-decoration: none
 }
-.prjBody{
-	color: #190909
+.prjBody, #workexp{
+	color: #190909;
+	font-size: 15px; 
 }
 
 
