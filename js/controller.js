@@ -10,25 +10,25 @@ window.onload = function() {
 
 function doClick(input){	
 	console.log("Called by element with id: "+ input.toString());
+	if (prevMenuClicked!=null)
+			prevMenuClicked.hide();	
 	if (input == "ab"){		
-		if (prevMenuClicked!=null)
-			prevMenuClicked.hide();
 		$("#aboutme").fadeIn(700);
 		prevMenuClicked = $("#aboutme");
 	}
-	if (input == "prj"){
-		if (prevMenuClicked!=null)
-			prevMenuClicked.hide();		
+	if (input == "prj"){	
 		switchPrjCat("#acaCat");
 		showXOPlayer('true');
 		$("#projects").fadeIn(700);
 		prevMenuClicked = $("#projects");
 	}
 	if (input == "wex"){
-		if (prevMenuClicked!=null)
-			prevMenuClicked.hide();
 		$("#workexp").fadeIn(700);
 		prevMenuClicked = $("#workexp");
+	}
+	if (input == "ct"){
+		$("#contact").fadeIn(700);
+		prevMenuClicked = $("#contact");
 	}
 }
 

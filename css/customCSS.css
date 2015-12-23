@@ -107,10 +107,20 @@ div {
 	font-size: 15px; 
 }
 
-
-
-/**/
-
+/*__Contact*/
+#contact{
+	padding-left: 10%;
+	padding-right : 10%;	
+}
+#contactLeftCol, #contactRightCol{
+	padding-left: 60px;		
+}
+#contactRightCol>a{
+	margin-left:10px;
+}
+#contactRightCol>a,#contactRightCol>i{
+	margin-top:10px;
+}
 
 /*FOOTER 70px*/
 #r4c1{
