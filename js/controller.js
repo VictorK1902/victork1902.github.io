@@ -70,6 +70,9 @@ function showXOPlayer(key){
 	
 }
 
+function callEmail(){
+	window.open('mailto:victorng1902@gmail.com');
+}
 		
 function adjustToScreen(){	
 	var size = getBootstrapDeviceSize();

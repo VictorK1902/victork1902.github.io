@@ -104,7 +104,7 @@ div {
 }
 .prjBody, #workexp{
 	color: #190909;
-	font-size: 15px; 
+	font-size: 19px; 
 }
 
 /*__Contact*/
@@ -112,14 +112,14 @@ div {
 	padding-left: 10%;
 	padding-right : 10%;	
 }
-#contactLeftCol, #contactRightCol{
-	padding-left: 60px;		
+#contactCenter>p{
+	text-align:center;
 }
-#contactRightCol>a{
+#contactCenter>p>a{
 	margin-left:10px;
 }
-#contactRightCol>a,#contactRightCol>i{
-	margin-top:10px;
+#contactCenter>p>i{
+	margin-left:30px;
 }
 
 /*FOOTER 70px*/
@@ -132,7 +132,7 @@ div {
 	color: black;
 	font-size: 12px;	
 	text-align: center;	
-	margin-top: 20px;
+	margin-top: 45px;
 	line-height: 30px;
 }
 /**/
